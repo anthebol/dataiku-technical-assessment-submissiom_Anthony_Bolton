@@ -1,6 +1,5 @@
 import unittest
-import time
-from c3po.c3po import C3PO
+from c3po.c3po import C3PO  # Make sure this import line matches the actual location of your C3PO class
 
 class TestC3PO(unittest.TestCase):
     
@@ -31,15 +30,7 @@ class TestC3PO(unittest.TestCase):
         expected_odds = 0
         # Create an instance of C3PO and calculate the odds
         c3po = C3PO(self.millennium_falcon_data)
-        
-        # Start timing
-        start_time = time.time()
         actual_odds = c3po.give_me_the_odds(empire_data)
-        # End timing
-        end_time = time.time()
-
-        # Print the runtime
-        print(f"Runtime of test_example_1: {end_time - start_time} seconds")
         # Assert that the actual odds match the expected odds
         self.assertEqual(actual_odds, expected_odds)
 
