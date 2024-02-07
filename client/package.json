@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "start-flask": "cd ../server && flask run",
+    "start-flask": "cd ../server && python app.py",
     "start": "concurrently \"npm run serve\" \"npm run start-flask\""
   },
   "dependencies": {
