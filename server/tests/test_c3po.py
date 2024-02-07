@@ -1,10 +1,9 @@
 import unittest
-from c3po.c3po import C3PO  # Make sure this import line matches the actual location of your C3PO class
+from c3po.c3po import C3PO
 
 class TestC3PO(unittest.TestCase):
     
     def setUp(self):
-        # Common setup for the millennium falcon data
         self.millennium_falcon_data = {
             "autonomy": 6, 
             "routes": [
@@ -17,7 +16,6 @@ class TestC3PO(unittest.TestCase):
         }
 
     def test_example_1(self):
-        # Setup for Example 1
         empire_data = {
             "countdown": 7,
             "bounty_hunters": [
@@ -26,16 +24,12 @@ class TestC3PO(unittest.TestCase):
                 {"planet": "Hoth", "day": 8}
             ]
         }
-        # Expected result for Example 1
         expected_odds = 0
-        # Create an instance of C3PO and calculate the odds
         c3po = C3PO(self.millennium_falcon_data)
-        actual_odds = c3po.give_me_the_odds(empire_data)
-        # Assert that the actual odds match the expected odds
+        actual_odds = c3po.calculateOdds(empire_data)
         self.assertEqual(actual_odds, expected_odds)
 
     def test_example_2(self):
-        # Setup for Example 2
         empire_data = {
             "countdown": 8,
             "bounty_hunters": [
@@ -44,12 +38,12 @@ class TestC3PO(unittest.TestCase):
                 {"planet": "Hoth", "day": 8}
             ]
         }
-        # Expected result for Example 2
         expected_odds = 0.81
-        # Test code similar to test_example_1
+        c3po = C3PO(self.millennium_falcon_data)
+        actual_odds = c3po.calculateOdds(empire_data)
+        self.assertEqual(actual_odds, expected_odds)
 
     def test_example_3(self):
-        # Setup for Example 3
         empire_data = {
             "countdown": 9,
             "bounty_hunters": [
@@ -58,12 +52,12 @@ class TestC3PO(unittest.TestCase):
                 {"planet": "Hoth", "day": 8}
             ]
         }
-        # Expected result for Example 3
         expected_odds = 0.9
-        # Test code similar to test_example_1
+        c3po = C3PO(self.millennium_falcon_data)
+        actual_odds = c3po.calculateOdds(empire_data)
+        self.assertEqual(actual_odds, expected_odds)
 
     def test_example_4(self):
-        # Setup for Example 4
         empire_data = {
             "countdown": 10,
             "bounty_hunters": [
@@ -72,10 +66,10 @@ class TestC3PO(unittest.TestCase):
                 {"planet": "Hoth", "day": 8}
             ]
         }
-        # Expected result for Example 4
         expected_odds = 1
-        # Test code similar to test_example_1
+        c3po = C3PO(self.millennium_falcon_data)
+        actual_odds = c3po.calculateOdds(empire_data)
+        self.assertEqual(actual_odds, expected_odds)
 
-# This allows the tests to be run from the command line
 if __name__ == '__main__':
     unittest.main()
