@@ -8,11 +8,11 @@ Dataiku Technical Assessment: "Millennium Falcon Challenge" by Anthony Bolton
 This application is a tool designed to calculate the odds of the Millennium Falcon's mission success to reach Endor in time and save the galaxy. It features a Vue.js frontend for user interaction and a Flask backend for processing the calculations.
 
 The application is designed to ensure consistent user experience on both mobile and web platforms: Below are screenshots the the applicatoon: 
-![Screenshot of the web application](client\src\assets\demo2.png)
+![Screenshot of the web application](demo2.png)
 *Screenshot of the web application*
-![Both millennium-falcon.json and empire.json uploaded and tested for Example 2 on the original Github - returning the correct result](client\src\assets\demo1.png)
+![Both millennium-falcon.json and empire.json uploaded and tested for Example 2 on the original Github - returning the correct result](demo1.png)
 *Both millennium-falcon.json and empire.json uploaded and tested for Example 2 on the original Github - returning the correct result*
-![Screenshot of the mobile application](client\src\assets\demo_phone.png)
+![Screenshot of the mobile application](demo_phone.png)
 *Screenshot of the mobile application*
 
 ## Backend
