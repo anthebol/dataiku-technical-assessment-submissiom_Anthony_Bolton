@@ -43,6 +43,7 @@ class C3PO:
         bounty_hunters,
         refueled,
     ):
+        
         # Destination reached
         if current == destination and time_left >= 0:
             return odds

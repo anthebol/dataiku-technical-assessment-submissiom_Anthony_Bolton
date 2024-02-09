@@ -91,7 +91,7 @@ export default {
       formData.append('millennium-falcon', this.millenniumFalcon);
       formData.append('empire', this.empire);
 
-      axios.post('http://localhost:5000/calculateOdds', formData)
+      axios.post('http://localhost:8081/calculateOdds', formData)
       .then(response => {
         this.result = response.data;
         this.validationMessage = '';

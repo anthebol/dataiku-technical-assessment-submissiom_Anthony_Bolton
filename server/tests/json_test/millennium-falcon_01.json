@@ -1,0 +1,10 @@
+{
+    "autonomy": 8, 
+    "routes": [
+      {"origin": "Tatooine", "destination": "Dagobah", "travelTime": 4 },
+      {"origin": "Dagobah", "destination": "Endor", "travelTime": 2 },
+      {"origin": "Dagobah", "destination": "Hoth", "travelTime": 1 },
+      {"origin": "Hoth", "destination": "Endor", "travelTime": 2 },
+      {"origin": "Tatooine", "destination": "Hoth", "travelTime": 3 }
+    ]
+  }
