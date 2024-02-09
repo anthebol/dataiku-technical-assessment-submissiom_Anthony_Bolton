@@ -1,4 +1,5 @@
 # Backend
+#---------
 # venv
 dataiku/
 
@@ -7,10 +8,10 @@ __pycache__/
 *.py[cod]
 
 # Frontend
+#---------
 .DS_Store
 node_modules
 /dist
-
 
 # local env files
 .env.local
