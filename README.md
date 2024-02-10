@@ -17,13 +17,13 @@ https://drive.google.com/file/d/15dlA8gHc-z0paoAz4BhMVtS9FCya1eHB/view
 ### Screenshot Demonstration ###
 Below are screenshots the the application: 
 
-![Screenshot of the web application](assets\demo2.png)
+![Screenshot of the web application](demo2.png)
 **Screenshot of the web application**
 
-![Both millennium-falcon.json and empire.json uploaded and tested for Example 2 on the original Github - returning the correct result](assets\demo1.png)
+![Both millennium-falcon.json and empire.json uploaded and tested for Example 2 on the original Github - returning the correct result](demo1.png)
 **Both millennium-falcon.json and empire.json uploaded and tested for Example 2 on the original Github - returning the correct result**
 
-![Screenshot of the mobile application](assets\demo_phone.png)
+![Screenshot of the mobile application](demo_phone.png)
 **Screenshot of the mobile application**
 
 ## Requirements
@@ -67,22 +67,30 @@ Evaluation:
 - The codebase prioritizes **readability and cleanliness**. It employs clear and **meaningful function and variable names**, as well as adopts a concise and understandable code style and structure. Additionally, it incorporates essential comments where necessary to further enhance comprehension.
 ## Backend
 
-Built with Flask, a lightweight WSGI web application framework in Python. It is easy to use and extends into a complex application. Flask-CORS is employed for handling Cross-Origin Resource Sharing (CORS), making AJAX requests possible from the frontend to the backend.
+The Flask backend of this application operates as a robust computational engine, leveraging Flask's lightweight architecture and Flask-CORS for seamless cross-origin resource sharing. 
 
-The C3PO Class in implemented with Python, taking in JSON files as inputs from client-side Vue.js and returning the odds of success for the Millennium Falcon to save the galaxy to the frontend. 
+At the heart of this backend infrastructure is the C3PO Class, a Python-based computational module tasked with processing JSON inputs from the Vue.js frontend. Upon receiving requests, Flask routes them to the C3PO Class, which efficiently parses the JSON data, executes complex calculations, and generates precise success odds for the Millennium Falcon's mission, responding to the frontends request.
 
 ## Frontend
 
 The frontend is crafted with Vue.js, a versatile JavaScript framework for building UIs and single-page applications. Axios is used for promise-based HTTP client to make requests to the backend.
 
-The following features are implemented:
+The implemented features include:
+- Buttons for Local file upload.
+- Drag-and-drop box for local file upload, supporting multiple file uploads in one drag.
+- "Calculate Odds" button to input the two JSON files to the C3PO Class.
+- display of the Output of the calculateOdds function from the C3PO Class.
+- Data validation and error handling. The frontend detects and reports the following incidents with text message errors to guide users:
+    - Input file not in JSON format
+    - Empire data uploaded to Mellinnium falcon section
+    - Mellinnium falcon data uploaded to empire data section
 
 ## Instructions
 
 ### Prerequisites
 
-1. Before starting, ensure you have **Python** with **pip** and **Node.js** with **npm** installed on your system. 
-2. It is recommended to use a **virtual environment** for the Python packages.
+1. Before starting, ensure you have [Python](https://www.python.org/downloads/) with [pip](https://pypi.org/project/pip/) and [Node.js](https://nodejs.org/en/download/current) with [npm](https://www.npmjs.com/package/npm) installed on your system. 
+2. It is highly recommended to use a [virtual environment](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/) for the Python packages to avoid conflicts with local dependancies.
 3. **Make sure that the local ports 8080 and 8081 are available on your system**. The Vue.js front-end application will utilize port 8080, while the Flask backend server will operate on port 8081. 
 
 ### Client-Side Setup
@@ -105,9 +113,9 @@ To run the application from the client directory:
 cd client
 npm start
 ```
-### Running Unit Tests on the C3PO Class from backend
-Run the following command in root directory:
+## Testing
+Run the following command in root directory to run unit tests on the C3PO Class using [Pytest](https://docs.pytest.org/en/8.0.x/):
 ```sh
 pytest -v --durations=0 server/tests/test_c3po.py
 ```
-
+- Unit testing is implemented for the give testcases/examples. This is to help detect and prevent defects early in the development lifecycle, leading to higher-quality software productions.
