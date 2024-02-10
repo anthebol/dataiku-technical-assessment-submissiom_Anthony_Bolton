@@ -121,3 +121,5 @@ Run the following command in root directory to run unit tests on the C3PO Class 
 pytest -v --durations=0 server/tests/test_c3po.py
 ```
 - Unit testing is implemented for the given testcases/examples. This is to help detect and prevent defects early in the development lifecycle, leading to higher-quality software productions.
+![unit_test_results](unit_test_results.png)
+**Unit tests passed for given testcases/examples**
