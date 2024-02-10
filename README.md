@@ -39,7 +39,7 @@ The C3PO Class takes in two JSON files as inputs: Navigation Data of the Millenn
 ```sh
 cd server/tests/json_tests
 ```
-- For a detailed textual explanation and analysis for how the C3PO Class was implemented, navitage to the following google drive link:
+- For a detailed textual explanation and analysis for how the C3PO Class was implemented, navigate to the following google drive link:
 https://drive.google.com/file/d/1kPbq5Nxb2FPi3IeRY6V4JfXmBZ_Huny6/view?usp=drive_link
 
 2. ### Correctness with respect to the given specification
@@ -69,13 +69,13 @@ Evaluation:
 - The codebase prioritizes **readability and cleanliness**. It employs clear and **meaningful function and variable names**, as well as adopts a concise and understandable code style and structure. Additionally, it incorporates essential comments where necessary to further enhance comprehension.
 ## Backend
 
-The Flask backend of this application operates as a robust computational engine, leveraging Flask's lightweight architecture and Flask-CORS for seamless cross-origin resource sharing. 
+The [Flask](https://flask.palletsprojects.com/en/3.0.x/) backend of this application operates as a robust computational engine, leveraging Flask's lightweight architecture and [Flask-CORS](https://flask-cors.readthedocs.io/en/latest/) for seamless cross-origin resource sharing. 
 
 At the heart of this backend infrastructure is the C3PO Class, a Python-based computational module tasked with processing JSON inputs from the Vue.js frontend. Upon receiving requests, Flask routes them to the C3PO Class, which efficiently parses the JSON data, executes complex calculations, and generates precise success odds for the Millennium Falcon's mission, responding to the frontends request.
 
 ## Frontend
 
-The frontend is crafted with Vue.js, a versatile JavaScript framework for building UIs and single-page applications. Axios is used for promise-based HTTP client to make requests to the backend.
+The frontend is crafted with [Vue.js](https://vuejs.org/), a versatile JavaScript framework for building UIs and single-page applications. [Axios](https://v2.vuejs.org/v2/cookbook/using-axios-to-consume-apis.html?redirect=true) is used for promise-based HTTP client to make requests to the backend.
 
 The implemented features include:
 - Buttons for Local file upload.
