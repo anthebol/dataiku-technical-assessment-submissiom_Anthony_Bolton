@@ -10,7 +10,7 @@ The Millennium Falcon Odds Calculator is a full-stack application in response to
 In addition, the application is designed to ensure consistent user experience on both mobile and web platforms. 
 
 ### Video Demonstration ###
-To access a demonstration video of this application, navigate to the following google drive link:
+To access a video demonstrating all the features of this application and showing it passing all the given test cases, please follow the Google Drive link provided below: 
 https://drive.google.com/file/d/15dlA8gHc-z0paoAz4BhMVtS9FCya1eHB/view
 
 ### Screenshot Demonstration ###
@@ -39,7 +39,7 @@ The C3PO Class takes in two JSON files as inputs: Navigation Data of the Millenn
 ```sh
 cd server/tests/json_tests
 ```
-- For a detailed textual explanation and analysis for how the C3PO Class was implemented, navigate to the following google drive link:
+- For a detailed textual explanation and analysis for how the C3PO Class was implemented, navigate to the following Google Drive link:
 https://drive.google.com/file/d/1kPbq5Nxb2FPi3IeRY6V4JfXmBZ_Huny6/view?usp=drive_link
 
 2. ### Correctness with respect to the given specification
