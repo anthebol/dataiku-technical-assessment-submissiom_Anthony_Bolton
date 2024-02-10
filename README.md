@@ -16,13 +16,13 @@ https://drive.google.com/file/d/15dlA8gHc-z0paoAz4BhMVtS9FCya1eHB/view
 ### Screenshot Demonstration ###
 Below are screenshots the the application: 
 
-![Screenshot of the web application](demo2.png)
+![Screenshot of the web application](/assets/demo2.png)
 **Screenshot of the web application**
 
-![Both millennium-falcon.json and empire.json uploaded and tested for Example 2 on the original Github - returning the correct result](demo1.png)
+![Both millennium-falcon.json and empire.json uploaded and tested for Example 2 on the original Github - returning the correct result](/assets/demo1.png)
 **Both millennium-falcon.json and empire.json uploaded and tested for Example 2 on the original Github - returning the correct result**
 
-![Screenshot of the mobile application](demo_phone.png)
+![Screenshot of the mobile application](/assets/demo_phone.png)
 **Screenshot of the mobile application**
 
 ## Requirements
@@ -121,5 +121,5 @@ Run the following command in root directory to run unit tests on the C3PO Class 
 pytest -v --durations=0 server/tests/test_c3po.py
 ```
 - Unit testing is implemented for the given testcases/examples. This is to help detect and prevent defects early in the development lifecycle, leading to higher-quality software productions.
-![unit_test_results](unit_test_results.png)
+![unit_test_results](/assets/unit_test_results.png)
 **Unit tests passed for given testcases/examples**
