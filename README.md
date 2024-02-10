@@ -27,19 +27,22 @@ Below are screenshots the the application:
 **Screenshot of the mobile application**
 
 ## Requirements
-1. ### To program C3PO to compute the odds that the Millennium Falcon reaches Endor in time and saves the galaxy - given two JSON files. 
+1. ### Program C3PO to compute the odds that the Millennium Falcon reaches Endor in time and saves the galaxy - given two JSON files. 
 
 - To navitage to the C3PO Class:
 ```sh
 cd server/c3po/c3po.py
 ```
 The C3PO Class takes in two JSON files as inputs: Navigation Data of the Millennium Falcon(millennium-falcon.json) and Empire countdown and Bounty Hunter invasion plan data(empire.js) 
-- To test the C3PO Class with the app, find example/testcases given from [the question github](https://github.com/dataiku/millenium-falcon-challenge-simple) in:
+- To test the C3PO Class with the app, find example/testcases given from [the question github](https://github.com/dataiku/millenium-falcon-challenge-simple) in the following directory:
+    - Example Millennium Falcon file: millennium-falcon_0.json
+    - Example Empire files in the correct order: empire_0.json(Output: 0), empire_1.json(Output: 0.81), empire_2.json(Output: 0.9) and empire_2.json(Output: 1).
 ```sh
 cd server/tests/json_tests
 ```
-- Example Millennium Falcon file: millennium-falcon_0.json
-- Example Empire files in the correct order: empire_0.json(Output: 0), empire_1.json(Output: 0.81), empire_2.json(Output: 0.9) and empire_2.json(Output: 1).
+- For a detailed textual explanation and analysis for how the C3PO Class was implemented, navitage to the following google drive link:
+https://drive.google.com/file/d/1kPbq5Nxb2FPi3IeRY6V4JfXmBZ_Huny6/view?usp=drive_link
+
 2. ### Correctness with respect to the given specification
 - The C3PO Class **passes all given testcases** and correctly return the output to the frontend.
 - **Additional testcases** are implemented to check edge cases and various scenarios (However, the original testcases cover a well-rounded amount of cases)
@@ -118,4 +121,4 @@ Run the following command in root directory to run unit tests on the C3PO Class 
 ```sh
 pytest -v --durations=0 server/tests/test_c3po.py
 ```
-- Unit testing is implemented for the give testcases/examples. This is to help detect and prevent defects early in the development lifecycle, leading to higher-quality software productions.
+- Unit testing is implemented for the given testcases/examples. This is to help detect and prevent defects early in the development lifecycle, leading to higher-quality software productions.

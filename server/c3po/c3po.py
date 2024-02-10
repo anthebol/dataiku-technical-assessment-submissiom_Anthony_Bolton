@@ -67,23 +67,28 @@ class C3PO:
                 refueled = True,
             )
 
-        # Check each route of current planet
+        # Check each route from current planet
         for (origin, dest), travel_time in self.route_dict.items():
             if origin == current:
+                # Ajust fuel and consider refueling
                 next_fuel_left = fuel_left - travel_time
                 if next_fuel_left < 0:
+                    # If refuel needed, check for bounty hunters on planet
                     if (current, days_spent) in bounty_hunters:
                         odds *= 0.9
                     next_fuel_left = self.autonomy - travel_time
                     days_spent += 1
                     time_left -= 1
 
+                # Travel is possible within the remaining time
                 if time_left - travel_time >= 0:
+                    # Check for bounty hunters
                     if (dest, days_spent + travel_time) in bounty_hunters:
                         path_odds = odds * 0.9
                     else:
                         path_odds = odds
 
+                    # Recursively find path from the next planet
                     next_odds = self.planRoute(
                         current = dest,
                         destination = destination,
